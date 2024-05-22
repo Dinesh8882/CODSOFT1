@@ -1,0 +1,1932 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root{
+    --font: "Reddit Sans", sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+.default-padding {
+    padding: 0 120px;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+}
+
+
+.hero-sec {
+    /* background-color: yellow; */
+    position: relative;
+    width: 100%;
+
+}
+
+nav {
+    padding: 30px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    background:linear-gradient(to bottom right , rgb(250, 10, 250) , rgb(236, 124, 247));
+    left: 0;
+    top: 0;
+    color: white;
+    z-index: 9999;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+
+nav ul li a {
+    font-family: var(--font);
+
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.911);
+    font-size: 17px;
+    font-weight: 777;
+}
+
+.logo h1 {
+    font-size: 28px;
+    font-weight: 666;
+    font-family: var(--font);
+}
+
+.btn {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn button {
+    font-family: var(--font);
+    padding: 8px 20px;
+    outline: none;
+    border: 1px solid pink;
+    border-radius: 4px;
+}
+
+.btn button:nth-child(2) {
+    color: white;
+    background: linear-gradient(to right bottom, rgb(204, 66, 238), rgb(240, 170, 247));
+}
+
+.hero{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 90px;
+    padding-top: 70px;
+}
+
+.content {
+    width: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.content h1 {
+    margin-bottom: 12px;
+    line-height: 0.9;
+    font-size: 55px;
+    color: rgba(82, 78, 78, 0.884);
+}
+
+.content p {
+    margin-bottom: 18px;
+}
+
+
+.hero-footer {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    background: linear-gradient(to right bottom, rgb(198, 17, 243), rgba(233, 63, 248, 0.979));
+    width: 100%;
+    height: 64px;
+}
+
+.btn1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn1 button {
+    padding: 8px 20px;
+    outline: none;
+    border: 1px solid pink;
+    border-radius: 4px;
+}
+
+.btn1 button:nth-child(1) {
+    color: white;
+    background: linear-gradient(to right bottom, rgb(203, 35, 245), rgb(227, 127, 236));
+}
+
+
+
+.hero-img {
+    width: 600px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: end;
+}
+
+.hero-img .hero-imgBox {
+    position: absolute;
+    width: 300px;
+    background: linear-gradient(to right bottom, rgb(198, 17, 243), rgba(228, 141, 236, 0.815));
+    height: 300px;
+    top: 40%;
+    left: 55%;
+    border-radius: 53% 47% 81% 19% / 42% 67% 33% 58%;
+    transform: translate(-45%, -60%);
+    transition: all 0.5s;
+}
+
+.hero-img img {
+    z-index: 1;
+    position: relative;
+    bottom: -10px;
+}
+
+
+
+.courses {
+    padding-top: 120px;
+    margin-top: 30px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.search-box h1 {
+    font-size: 35px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.search-box .search-input {
+    border: 1px solid rgb(205, 63, 248);
+    width: 490px;
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+
+.search-input input,
+button {
+    border: none;
+    outline: none;
+}
+
+.search-input button {
+    background: linear-gradient(to right bottom, rgb(198, 17, 243), rgba(210, 84, 221, 0.815));
+    padding: 8px 25px;
+    color: white;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.search-input input {
+    padding: 8px 10px;
+    width: 100%;
+}
+
+.courses-box {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.courses-left {
+    width: 500px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+
+    img {
+        border-radius: 50px;
+        border: 5px dashed rgb(226, 107, 236);
+        padding: 15px;
+    }
+
+}
+
+.courses-right {
+    width: 550px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    padding-top: 30px;
+}
+
+.course-content h1 {
+    font-size: 29px;
+    width: 70%;
+    margin-bottom: 30px;
+    color: rgb(61, 60, 60);
+
+    span {
+        color: rgb(231, 30, 238);
+    }
+}
+
+.benefits {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.benefits span {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    flex: none;
+    background-color: rgb(201, 48, 142);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefits span i {
+    color: white;
+    font-size: 30px;
+}
+
+.benefits-info p {
+    width: 90%;
+    font-weight: 888;
+    color: rgb(63, 60, 60);
+}
+
+.benefits-info h2 {
+    margin-bottom: 8px;
+    color: rgba(63, 62, 62, 0.815);
+}
+
+.popular-cour {
+    width: 100%;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    /* height: 80vh; */
+    background: linear-gradient(to right bottom, rgb(198, 17, 243), rgba(229, 113, 240, 0.74));
+}
+
+.popular-cour h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+
+.popular-cour p {
+    width: 39%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cour-slider {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px 20px;
+}
+
+
+.move {
+    background-color: white;
+    width: 220px;
+    padding: 10px 10px;
+    border-radius: 20px;
+    color: rgb(46, 45, 45);
+}
+
+.move h3 {
+    margin-top: 10px;
+}
+
+.move img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.move .folow {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.folow span {
+    font-weight: 777;
+    font-size: 12px;
+}
+
+.folow1 {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.folow1 span {
+    font-size: 17px;
+    font-weight: 999;
+}
+
+
+
+.instructor {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.instructor .left {
+    /* width: 100px; */
+    width: 50%;
+    padding: 20px 0px;
+
+}
+
+.instructor .left h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+
+
+.instructor .left h1 span {
+    color: rgb(236, 75, 228);
+}
+
+
+.skills {
+    margin-top: 20px;
+}
+
+.skills-box {
+    /* background-color: green; */
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    padding-left: 19px;
+}
+
+.skills-box ul li {
+    margin-bottom: 4px;
+}
+
+.instructor .left button {
+    padding: 8px 20px;
+    outline: none;
+    border: 1px solid pink;
+    border-radius: 4px;
+    margin-top: 20px;
+    background: linear-gradient(to right bottom, rgb(198, 17, 243), rgba(210, 84, 221, 0.815));
+    color: white;
+    font-weight: 777;
+
+}
+
+
+.instructor .right {
+    width: 500px;
+
+    display: flex;
+    justify-content: end;
+    /* align-items: start; */
+    padding: 40px 0;
+}
+
+.instructor .right .img-box {
+    width: 290px;
+    height: 300px;
+    background: linear-gradient(to right bottom, rgb(198, 17, 243), rgba(210, 84, 221, 0.815));
+    display: flex;
+    justify-content: center;
+    border-bottom-left-radius: 45%;
+    border-bottom-right-radius: 45%;
+    overflow: hidden;
+}
+
+.instructor .right .img-box img {
+    width: 450px;
+    height: 380px;
+}
+
+
+
+
+.testimonials {
+    width: 100%;
+    background: linear-gradient(to right bottom, rgb(198, 17, 243), rgba(250, 166, 236, 0.979));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    color: white;
+    padding-bottom: 60px;
+}
+
+.testimonials h1 {
+    font-weight: 888;
+    font-size: 30px;
+}
+
+.testimonials .testi-pera {
+    /* width:; */
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 20px 100px;
+}
+
+
+
+
+.testi-student {
+    width: 100%;
+    margin-top: 30px;
+    /* height: 300px; */
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.student .img {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.student {
+    background-color: white;
+    width: 300px;
+    color: black;
+    /* flex: none; */
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+.student .img img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.img-info h4 {
+    color: rgb(255, 0, 212);
+
+}
+
+.img-info h5 {
+    color: rgb(82, 78, 81);
+
+}
+
+.student p {
+    padding: 10px 0px;
+    color: rgb(82, 78, 81);
+}
+
+.get-in-touch {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 90px 0; */
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.touch {
+    width: 100%;
+    /* height: 300px; */
+    background: linear-gradient(to right bottom, rgb(198, 17, 243), rgba(250, 166, 236, 0.979));
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 100px;
+    color: white;
+}
+
+.touch h1 {
+    font-size: 45px;
+    font-weight: 999;
+}
+
+.touch p {
+    margin-bottom: 25px;
+    padding: 0 220px;
+    text-align: center;
+}
+
+
+
+.touch .sub-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.touch .sub-input input {
+    padding: 15px 18px;
+    border-radius: 8px;
+    border: none;
+    width: 350px;
+    outline: none;
+}
+
+.touch .sub-input button {
+    padding: 11px 18px;
+    border-radius: 8px;
+    border: none;
+    width: 180px;
+    color: rgb(206, 9, 255);
+    outline: none;
+    font-size: 20px;
+}
+
+
+
+
+.footer {
+    width: 100%;
+    background: linear-gradient(to right bottom, rgb(198, 17, 243), rgba(250, 166, 236, 0.979));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    flex-wrap: wrap;
+    padding: 80px;
+    padding: 80px 120px;
+    position: relative;
+}
+
+
+.footer-cont {
+    width: 200px;
+
+    h1 {
+        font-size: 25px;
+        margin-bottom: 18px;
+    }
+
+    p {
+        line-height: 1.5;
+    }
+}
+
+.links {
+    margin-right: 20px;
+}
+
+.links h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.links li {
+    list-style: none;
+
+    margin-bottom: 12px;
+}
+
+.footer .copy {
+
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+#toggle {
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width:428px) {
+    .content h1 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        line-height: 1;
+        font-size: 20px;
+    }
+
+    .btn1 {
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .btn1 button {
+        flex: 1;
+        padding: 8px 5px;
+    }
+
+
+    .courses {
+        padding-top: 10px 20px;
+        /* padding: ; */
+        margin-top: 30px;
+        /* background-color: red; */
+    }
+
+    .search-box h1 {
+        font-size: 30px;
+    }
+
+    .search-box .search-input {
+        width: 360px;
+    }
+
+    .search-input button {
+        padding: 8px 20px;
+    }
+
+
+
+    .courses-box {
+        padding: 0 5px;
+        /* background-color: yellow; */
+
+    }
+
+    .courses-left {
+
+        img {
+            width: 280px;
+            padding: 10px;
+        }
+
+    }
+
+    .benefits {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .benefits span {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        flex: none;
+        background-color: rgb(201, 48, 142);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .benefits span i {
+        color: white;
+        font-size: 30px;
+    }
+
+    .benefits-info p {
+        width: 90%;
+        font-weight: 888;
+        color: rgb(63, 60, 60);
+    }
+
+    .benefits-info h2 {
+        margin-bottom: 8px;
+        color: rgba(63, 62, 62, 0.815);
+    }
+}
+
+@media (max-width:452px) {
+    .touch h1 {
+        font-size: 2000px;
+        font-weight: 999;
+    }
+
+    .touch p {
+
+        width: 100%;
+        font-size: 12px;
+        padding: 0px 0px;
+    }
+
+    .touch .sub-input {
+        gap: 5px;
+    }
+
+    .touch .sub-input input {
+        padding: 5px 12px;
+        border-radius: 5px;
+        width: 100px;
+    }
+
+    .touch .sub-input button {
+        padding: 5px 8px;
+        border-radius: 5px;
+        width: 69px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px;
+    }
+
+}
+
+
+
+@media (min-width:10px) and (max-width:480px) {
+    .default-padding {
+        padding: 0 50px;
+    }
+    nav{
+      
+        gap: 40px;
+
+        .logo{
+            margin-left: -80px;
+        }
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .content h1 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        line-height: 1;
+        font-size: 30px;
+    }
+
+    .content p {
+        margin-bottom: 25px;
+        font-size: 12px;
+    }
+
+    .btn1 {
+        margin-bottom: 20px;
+    }
+
+    .btn1 button {
+
+        width: 120px;
+    }
+
+    .hero-img {
+        /* width: 100%; */
+        display: none;
+    }
+
+    .hero-img .hero-imgBox {
+        width: 300px;
+        height: 299px;
+        top: 38%;
+        left: 40%;
+        transform: translate(-45%, -60%);
+    }
+
+    .popular-cour {
+        padding-bottom: 50px;
+        padding-top: 30px;
+    }
+
+    .courses {
+        padding-top: 70px;
+
+    }
+
+    .cour-slider {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .popular-cour p {
+        width: 100%;
+    }
+
+    .instructor {
+        padding-top: 20px;
+    }
+
+    .instructor .left {
+        width: 100%;
+        padding: 20px 10px;
+    }
+
+    .skills-box {
+        justify-content: center;
+        width: 100%;
+        gap: 20px 0;
+        flex-wrap: wrap;
+    }
+
+    .instructor .right {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .testimonials {
+        padding-bottom: 40px;
+    }
+
+    .testimonials .testi-pera {
+        padding: 20px 10px;
+    }
+
+    .testimonials h1 {
+        font-size: 25px;
+        margin-top: 20px;
+    }
+
+    .get-in-touch {
+        width: 100%;
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+    }
+
+    .courses {
+        padding-top: 120px;
+        margin-top: 30px;
+    }
+
+    .search-box h1 {
+        font-size: 30px;
+    }
+
+    .search-box .search-input {
+        width: 250px;
+
+    }
+
+
+
+    .search-input button {
+        padding: 5px 15px;
+        font-size: 15px;
+    }
+
+    .search-input input {
+        padding: 5px 10px;
+        width: 100%;
+    }
+
+
+
+
+    .touch h1 {
+        font-size: 3.5vw;
+        font-weight: 999;
+    }
+
+    .touch p {
+
+        width: 200%;
+        padding: 0px 0px;
+        font-size: 14px;
+    }
+
+    .touch .sub-input {
+        gap: 5px;
+    }
+
+    .touch .sub-input input {
+        padding: 4px 10px;
+        border-radius: 5px;
+        width: 100px;
+    }
+
+    .touch .sub-input button {
+        padding: 6px 8px;
+        border-radius: 5px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: white;
+        flex-wrap: wrap;
+        padding: 80px;
+        padding: 80px 120px;
+        position: relative;
+    }
+
+    .footer-cont,
+    .links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: start;
+    }
+
+    .course-content h1 {
+        width: 100%;
+        text-align: start;
+
+    }
+
+}
+
+
+
+
+
+@media (min-width:481px) and (max-width:767px) {
+    .default-padding {
+        padding: 0 80px;
+    }
+
+    .hero-img {
+        width: 100%;
+
+    }
+
+    .courses-left {
+        width: 400px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .content h1 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        line-height: 1;
+        font-size: 50px;
+    }
+
+    .content p {
+        margin-bottom: 25px;
+    }
+
+    .btn1 {
+        margin-bottom: 20px;
+    }
+
+    .btn1 button {
+        width: 150px;
+    }
+
+    .hero-img {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: end;
+    }
+
+    .hero-img .hero-imgBox {
+        width: 300px;
+        height: 299px;
+        top: 38%;
+        left: 40%;
+        transform: translate(-45%, -60%);
+    }
+
+    .popular-cour {
+        padding-bottom: 50px;
+        padding-top: 30px;
+    }
+
+    .cour-slider {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .popular-cour p {
+        width: 100%;
+    }
+
+    .courses {
+        padding-top: 70px;
+
+    }
+
+    .instructor {
+        padding-top: 20px;
+    }
+
+    .instructor .left {
+        width: 100%;
+        padding: 20px 10px;
+    }
+
+    .skills-box {
+        justify-content: flex-start;
+        width: 100%;
+        gap: 20px 0;
+
+        flex-wrap: wrap;
+    }
+
+    .skills-box ul {
+        margin-right: 30px;
+    }
+
+    .instructor .right {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .testimonials {
+        padding-bottom: 40px;
+    }
+
+    .testimonials .testi-pera {
+        padding: 20px 10px;
+    }
+
+    .testimonials h1 {
+        font-size: 25px;
+        margin-top: 20px;
+    }
+
+    .get-in-touch {
+        width: 100%;
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+
+
+    .touch h1 {
+        font-size: 20px;
+        font-weight: 999;
+    }
+
+    .touch p {
+
+        width: 100%;
+        font-size: 12px;
+        padding: 0px 0px;
+    }
+
+    .touch .sub-input {
+        gap: 5px;
+    }
+
+    .touch .sub-input input {
+        padding: 5px 12px;
+        border-radius: 5px;
+        width: 100px;
+    }
+
+    .touch .sub-input button {
+        padding: 5px 8px;
+        border-radius: 5px;
+        width: 69px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        flex-wrap: wrap;
+        padding: 80px;
+        padding: 80px 120px;
+        position: relative;
+    }
+
+    .footer-cont,
+    .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .course-content h1 {
+        width: 100%;
+        text-align: center;
+
+    }
+
+}
+
+
+@media (min-width:768px) and (max-width:991px) {
+    .default-padding {
+        padding: 0 80px;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+
+
+    .content h1 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        line-height: 1;
+        font-size: 50px;
+    }
+
+    .content p {
+        margin-bottom: 25px;
+    }
+
+    .btn1 {
+        margin-bottom: 20px;
+    }
+
+    .btn1 button {
+        width: 150px;
+    }
+
+    .hero-img {
+        width: 100%;
+        overflow: visible;
+        position: relative;
+        /* background-color: red; */
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-img .hero-imgBox {
+        width: 300px;
+        height: 299px;
+        top: 38%;
+        left: 55%;
+        transform: translate(-45%, -60%);
+    }
+
+    .popular-cour {
+        padding-bottom: 50px;
+        padding-top: 30px;
+    }
+
+    .cour-slider {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .popular-cour p {
+        width: 100%;
+    }
+
+    .courses {
+        padding-top: 70px;
+
+    }
+
+    .instructor {
+        margin-top: 20px;
+    }
+
+    .instructor .left {
+        width: 100%;
+        padding: 20px 10px;
+    }
+
+    .skills-box {
+        justify-content: space-between;
+        width: 100%;
+        gap: 20px 0;
+        flex-wrap: wrap;
+    }
+
+    .instructor .right {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .testimonials {
+        padding-bottom: 40px;
+    }
+
+    .testimonials .testi-pera {
+        padding: 20px 10px;
+    }
+
+    .testimonials h1 {
+        font-size: 25px;
+        margin-top: 20px;
+    }
+
+    .get-in-touch {
+        width: 100%;
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+
+
+    .touch h1 {
+        font-size: 35px;
+        font-weight: 999;
+    }
+
+    .touch p {
+
+        width: 1;
+        padding: 0px 0px;
+    }
+
+    .touch .sub-input {
+        gap: 10px;
+    }
+
+    .touch .sub-input input {
+        padding: 9px 12px;
+        border-radius: 5px;
+        width: 200px;
+    }
+
+    .touch .sub-input button {
+        padding: 8px 8px;
+        border-radius: 5px;
+        width: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        flex-wrap: wrap;
+        padding: 80px;
+        padding: 80px 120px;
+        position: relative;
+    }
+
+    .footer-cont,
+    .links {
+        margin-right: 20px;
+    }
+
+    .course-content h1 {
+        width: 100%;
+        text-align: center;
+
+    }
+
+}
+
+@media (max-width:992px) {
+    #toggle {
+        display: block;
+    }
+    
+   
+    
+    nav ul {
+        overflow: hidden;
+        background: linear-gradient( to bottom right , rgb(247, 7, 255) , rgb(253, 190, 255));
+        width: 100%;
+        padding-left: 20px;
+        display: block;
+        position: absolute;
+        /* padding-bottom: 20px; */
+        height: 0px;
+        top: 96%;
+        left: -0%;
+        transition: all 0.5s linear;
+
+    }
+    .btn{
+        display: none;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+    
+    nav ul li a {
+        color: white;
+    }
+
+    .logo h1 {
+        font-size: 35px;
+        font-weight: 999;
+    }
+
+
+
+
+}
+
+@media (min-width:992px) and (max-width:1299px) {
+    .default-padding {
+        padding: 0 100px;
+    }
+
+
+
+
+    .content {
+        width: 50%;
+    }
+
+    .content h1 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        line-height: 1;
+        font-size: 50px;
+    }
+
+    .content p {
+        margin-bottom: 25px;
+    }
+
+    .btn1 {
+        margin-bottom: 20px;
+    }
+
+    .btn1 button {
+        width: 150px;
+    }
+
+    .hero-img {
+        width: 50%;
+    }
+
+    .courses-box {
+        display: flex;
+        justify-content: space-between;
+        /* background-color: red; */
+    }
+
+    .courses-left {
+        width: 50%;
+    }
+
+    .courses-right {
+        width: 40%;
+    }
+
+    .hero-img .hero-imgBox {
+        width: 300px;
+        height: 299px;
+        top: 38%;
+        left: 55%;
+        transform: translate(-45%, -60%);
+    }
+
+    .popular-cour {
+        padding-bottom: 50px;
+        padding-top: 30px;
+    }
+
+    .cour-slider {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .popular-cour p {
+        width: 100%;
+    }
+
+    .courses {
+        padding-top: 70px;
+
+    }
+
+    .instructor {
+        margin-top: 20px;
+    }
+
+    .instructor .left {
+        width: 100%;
+        padding: 20px 10px;
+    }
+
+    .skills-box {
+        justify-content: space-between;
+        width: 100%;
+        gap: 20px 0;
+        flex-wrap: wrap;
+    }
+
+    .instructor .right {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .testimonials {
+        padding-bottom: 40px;
+    }
+
+    .testimonials .testi-pera {
+        padding: 20px 10px;
+    }
+
+    .testimonials h1 {
+        font-size: 25px;
+        margin-top: 20px;
+    }
+
+    .get-in-touch {
+        width: 100%;
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+
+
+    .touch h1 {
+        font-size: 35px;
+        font-weight: 999;
+    }
+
+    .touch p {
+
+        width: 1;
+        padding: 0px 0px;
+    }
+
+    .touch .sub-input {
+        gap: 10px;
+    }
+
+    .touch .sub-input input {
+        padding: 9px 12px;
+        border-radius: 5px;
+        width: 200px;
+    }
+
+    .touch .sub-input button {
+        padding: 8px 8px;
+        border-radius: 5px;
+        width: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        flex-wrap: wrap;
+        padding: 80px;
+        padding: 80px 120px;
+        position: relative;
+    }
+
+    .footer-cont,
+    .links {
+        margin-right: 20px;
+    }
+
+    .course-content h1 {
+        width: 100%;
+        text-align: center;
+
+    }
+
+}
+
+@media (min-width:1920px) {
+    .default-padding {
+        padding: 0 120px;
+    }
+
+    .content {
+        width: 50%;
+    }
+
+    .hero-img {
+        width: 50%;
+    }
+
+    .content h1 {
+        margin-top: 5vw;
+        margin-bottom: 20px;
+        line-height: 1;
+        font-size: 5vw;
+    }
+
+    .content p {
+        font-size: 2vw;
+        margin-bottom: 25px;
+    }
+
+    .btn1 {
+        margin-bottom: 20px;
+    }
+
+    .btn1 button {
+        width: 220px;
+        font-size: 28px;
+        padding: 20px 50px;
+    }
+
+    .hero {
+        display: flex;
+    }
+
+    .hero-footer {
+        height: 120px;
+    }
+
+    .hero-img .hero-imgBox {
+        width: 490px;
+        height: 499px;
+        top: 38%;
+        left: 55%;
+        transform: translate(-45%, -60%);
+    }
+
+    .hero-img img {
+        width: 900px;
+    }
+
+    .popular-cour {
+        padding-bottom: 50px;
+        padding-top: 30px;
+    }
+
+    .cour-slider {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .popular-cour p {
+        width: 100%;
+    }
+
+    .courses {
+        padding-top: 120px;
+        padding-bottom: 100px;
+        margin-top: 50px;
+
+    }
+
+    .search-box h1 {
+        font-size: 4vw;
+    }
+
+    .search-box .search-input {
+        width: 890px;
+
+    }
+
+    .search-input input {
+        font-size: 22px;
+        padding: 20px 28px;
+    }
+
+    .search-input button {
+        width: 300px;
+    }
+
+
+    /* popular-cour-section */
+    .popular-cour {
+        h1 {
+            font-size: 3vw;
+        }
+
+        p {
+            font-size: 1.5vw;
+            width: 82%;
+        }
+
+        .move {
+            padding: 10px 20px;
+            width: 380px;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+
+            h3 {
+                font-size: 35px;
+                margin-top: 20px;
+            }
+
+            .folow span {
+                margin-top: 10px;
+                font-size: 25px;
+            }
+
+            .folow1 span {
+                font-size: 22px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    /* instructor-section */
+    .instructor {
+        display: flex;
+        margin-top: 20px;
+        padding: 60px 100px;
+        justify-content: space-around;
+
+        .left {
+            width: 50%;
+            padding: 20px 20px;
+
+            .head {
+                font-size: 3vw;
+            }
+
+            p {
+                font-size: 1.5vw;
+            }
+
+            .skills {
+                h1 {
+                    font-size: 38px;
+                }
+
+                .skills-box {
+                    justify-content: space-between;
+                    gap: 20px 0;
+                    flex-wrap: wrap;
+
+                    ul li {
+                        font-size: 25px;
+                    }
+                }
+            }
+
+            button {
+                font-size: 20px;
+                padding: 15px 28px;
+                border-radius: 4px;
+            }
+
+        }
+
+        .right {
+            width: 40%;
+            justify-content: center;
+            padding: 0 20px;
+            margin-top: -40px;
+
+            .img-box {
+                width: 450px;
+                height: 500px;
+                display: flex;
+
+                img {
+                    width: 700px;
+                    height: 500px;
+                }
+            }
+        }
+    }
+
+    .courses-box {
+        justify-content: space-evenly;
+        gap: 80px;
+        margin-top: 20px;
+
+    }
+
+    .course-box h1 {
+        font-size: 3vw;
+    }
+
+    .courses-left {
+        width: 700px;
+    }
+
+    .courses-left img {
+        width: 600px;
+    }
+
+    .courses-right {
+        width: 800px;
+    }
+
+    .course-content h1 {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .benefits-info h2 {
+        font-size: 30px;
+    }
+
+    .benefits-info p {
+        font-size: 20px;
+    }
+
+
+    /* Testimonials */
+    .testimonials {
+        padding-bottom: 90px;
+        padding-top: 50px;
+
+        h1 {
+            font-size: 3vw;
+            margin-top: 20px;
+        }
+
+        .testi-pera {
+            font-size: 1.4vw;
+            width: 80%;
+            padding: 20px 10px;
+
+        }
+
+        .testi-student {
+            .student {
+                width: 460px;
+                padding: 30px 20px;
+
+                .img .img-info {
+                    h4 {
+                        font-size: 40px;
+                    }
+
+                    h5 {
+                        font-size: 26px;
+                    }
+                }
+
+                p {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+
+    /* Get-In-Touch */
+    .get-in-touch {
+        width: 100%;
+        padding-top: 90px;
+        padding-bottom: 90px;
+
+
+        .touch {
+            padding: 100px 2px;
+
+            h1 {
+                font-size: 3.2vw;
+                font-weight: 999;
+            }
+
+            p {
+
+                width: 50%;
+                font-size: 30px;
+                padding: 0px 0px;
+            }
+
+            .sub-input {
+                gap: 30px;
+
+                input {
+                    padding: 18px 19px;
+                    font-size: 25px;
+                    border-radius: 5px;
+                    width: 700px;
+                }
+
+                button {
+                    padding: 14.5px 100px;
+                    width: 120px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 30px;
+                }
+            }
+
+        }
+    }
+
+    /* Footer */
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        flex-wrap: wrap;
+        padding: 80px;
+        padding: 80px 120px;
+        position: relative;
+
+        .footer-cont {
+            margin-right: 20px;
+            width: 400px;
+            padding: 30px 20px;
+
+            h1 {
+                font-size: 2.4vw;
+            }
+
+            p {
+                font-size: 1.3vw;
+            }
+        }
+
+        .links {
+            margin-right: 20px;
+
+            h1 {
+                font-size: 2.4vw;
+            }
+
+            li {
+                font-size: 30px;
+                margin-bottom: 15px;
+            }
+
+        }
+
+        .copy {
+            font-size: 25px;
+        }
+
+    }
+}
